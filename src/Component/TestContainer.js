@@ -2,9 +2,14 @@ import React from 'react'
 import TryAgain from './TryAgain'
 import TypingChallengeContainer from './TypingChallengeContainer'
 
-function TestContainer({ words, characters, wpm }) {
-
-    const timeRemaining = 50;
+function TestContainer({
+    selectedParagraph,
+    words,
+    characters,
+    wpm,
+    timeRemaining,
+    timerStarted,
+}) {
 
     return (
 
@@ -12,7 +17,14 @@ function TestContainer({ words, characters, wpm }) {
             {/* terenary operator for conditional rendering */}
             {
                 timeRemaining > 0 ? (
-                    <TypingChallengeContainer words={words} characters={characters} wpm={wpm} />
+
+                    <TypingChallengeContainer
+                        selectedParagraph={selectedParagraph}
+                        words={words}
+                        characters={characters}
+                        wpm={wpm}
+                        timeRemaining={timeRemaining}
+                        timerStarted={timerStarted} />
                 ) :
                     (
                         <TryAgain words={words} characters={characters} wpm={wpm} />
