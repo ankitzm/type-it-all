@@ -5,8 +5,12 @@ import Footer from './Component/Footer';
 import Landing from './Component/Landing';
 import Nav from "./Component/Nav"
 
+import { SAMPLE_PARAGRAPHS } from './data/sampleParagraph';
+
 const totalTime = 60;
-const apiURL = "http://metaphorpsum.com/paragraphs/1/8"   // defining api url
+// const apiURL = "http://metaphorpsum.com/paragraphs/1/8"   // defining api url
+
+
 const defaultState = {
   selectedParagraph: "hello world",
   timerStarted: 0,
@@ -21,28 +25,45 @@ class App extends React.Component {
 
   state = defaultState
 
-  fetchNewParagraph = () => {
-    fetch(apiURL)
-      .then(response => response.text())
-      .then((data) => {
-        this.setState({ selectedParagraph: data })
+  fetchNewParagraphFallback = () => {
+    const data = SAMPLE_PARAGRAPHS[
+      Math.floor(Math.random() * SAMPLE_PARAGRAPHS.length)
+    ];
 
-        const selectedParagraphArray = data.split("")
-        const testInfo = selectedParagraphArray.map(selectedLetter => {
-          return {
-            testLetter: selectedLetter,
-            status: "notAttempted",
-          }
-        });
+    const selectedParagraphArray = data.split("")
+    const testInfo = selectedParagraphArray.map(selectedLetter => {
+      return {
+        testLetter: selectedLetter,
+        status: "notAttempted",
+      }
+    });
 
-        this.setState({ ...defaultState, testInfo, selectedParagraph: data }) // shorthand of this.setState({testInfo:testInfo})
-      })
+    this.setState({ ...defaultState, testInfo, selectedParagraph: data }) // shorthand of this.setState({testInfo:testInfo})
+
   }
+
+  // fetchNewParagraph = () => {
+  //   fetch(apiURL)
+  //     .then(response => response.text())
+  //     .then((data) => {
+  //       this.setState({ selectedParagraph: data })
+
+  //       const selectedParagraphArray = data.split("")
+  //       const testInfo = selectedParagraphArray.map(selectedLetter => {
+  //         return {
+  //           testLetter: selectedLetter,
+  //           status: "notAttempted",
+  //         }
+  //       });
+
+  //       this.setState({ ...defaultState, testInfo, selectedParagraph: data }) // shorthand of this.setState({testInfo:testInfo})
+  //     })
+  // }
 
 
   // API
   componentDidMount() {
-    this.fetchNewParagraph();
+    this.fetchNewParagraphFallback();
   }
 
 
@@ -68,7 +89,7 @@ class App extends React.Component {
   }
 
   // start again/retry
-  startAgain = () => { this.fetchNewParagraph() }
+  startAgain = () => { this.fetchNewParagraphFallback() }
 
   // handle user input
   handleUserInput = (inputValue) => {
