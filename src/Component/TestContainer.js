@@ -9,11 +9,14 @@ function TestContainer({
     wpm,
     timeRemaining,
     timerStarted,
+    testInfo,
+    inputHandler,
+    startAgain
 }) {
 
     return (
 
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full justify-center items-center">
             {/* terenary operator for conditional rendering */}
             {
                 timeRemaining > 0 ? (
@@ -24,10 +27,18 @@ function TestContainer({
                         characters={characters}
                         wpm={wpm}
                         timeRemaining={timeRemaining}
-                        timerStarted={timerStarted} />
+                        timerStarted={timerStarted}
+                        testInfo={testInfo}
+                        inputHandler={inputHandler}
+                    />
                 ) :
                     (
-                        <TryAgain words={words} characters={characters} wpm={wpm} />
+                        <TryAgain
+                            words={words}
+                            characters={characters}
+                            wpm={wpm}
+                            startAgain={startAgain}
+                        />
                     )
             }
 

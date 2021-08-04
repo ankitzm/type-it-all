@@ -9,9 +9,10 @@ function Challenge({
     wpm,
     timeRemaining,
     timerStarted,
-})
-
-{
+    testInfo,
+    inputHandler,
+    startAgain
+}) {
     return (
         <div className=" bg-green-300 flex flex-col justify-center items-center" >
             <div className="text-2xl mx-auto my-16">
@@ -24,7 +25,11 @@ function Challenge({
                     characters={characters}
                     wpm={wpm}
                     timeRemaining={timeRemaining}
-                    timerStarted={timerStarted} />
+                    timerStarted={timerStarted}
+                    testInfo={testInfo}
+                    inputHandler={inputHandler}
+                    startAgain={startAgain}
+                />
             </div>
         </div>
     )
