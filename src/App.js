@@ -7,7 +7,7 @@ import Nav from "./Component/Nav"
 
 import { SAMPLE_PARAGRAPHS } from './data/sampleParagraph';
 
-const totalTime = 0;
+const totalTime = 60;
 // const apiURL = "http://metaphorpsum.com/paragraphs/1/8"   // defining api url
 
 
