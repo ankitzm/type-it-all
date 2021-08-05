@@ -1,7 +1,7 @@
 import React from 'react'
 
 function TryAgain({ words, characters, wpm, startAgain }) {
-    const url = "theleanprogrammer.com";
+    const text = `Check out the React app to find your typing speed here https://ankitzm.github.io/type-it-all/, mine is ${wpm} wpm, what's yours. `;
 
     return (
         <div className="text-2xl border-2 text-justify">
@@ -24,7 +24,7 @@ function TryAgain({ words, characters, wpm, startAgain }) {
                     onClick={() =>
                         window.open(
                             "https://www.facebook.com/sharer/sharer.php?u=" +
-                            url,
+                            text,
                             "facebook-share-dialog",
                             "width=800,height=600"
                         )
@@ -36,8 +36,8 @@ function TryAgain({ words, characters, wpm, startAgain }) {
                 <button
                     onClick={() =>
                         window.open(
-                            "https://twitter.com/intent/tweet?text=Check%20this%20out%20" +
-                            url,
+                            "https://twitter.com/intent/tweet?text=" +
+                            text + "\n Created by @ankitzm",
                             "Twitter",
                             "width=800,height=600"
                         )
