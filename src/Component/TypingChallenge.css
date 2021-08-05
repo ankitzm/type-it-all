@@ -3,6 +3,20 @@
     height: 465px;
     margin: 20px 0px;
     text-align: left;
-    padding: 12px;
-    border: 2px solid black;
+    padding: 15px 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+    border: 1px solid rgba(97, 97, 97, 0.247);
+}
+
+.test-area {
+    margin-right: 1px;
+    background-color: rgba(97, 97, 97, 0.171);
+}
+
+@media (max-width: 640px) {
+    .text-area {
+        width: 50%;
+        font-size: 0.9rem;
+    }
 }

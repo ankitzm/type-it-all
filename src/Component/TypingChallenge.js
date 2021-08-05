@@ -14,13 +14,13 @@ function TypingChallenge({
 }) {
 
     return (
-        <div className="border-8">
-            <div className="text-2xl">
-                <div>00:{timeRemaining >= 10 ? timeRemaining : `0${timeRemaining}`}</div>
-                <div>{!timerStarted && "Start typing to start the test"}</div>
+        <div className="mt-4">
+            <div className="font-semibold">
+                <div className="text-4xl">00:{timeRemaining >= 10 ? timeRemaining : `0${timeRemaining}`}</div>
+                <div className="text-2xl mt-2 delay-500">{!timerStarted && "Start typing to start the test"}</div>
             </div>
-            <div className="flex flex-row justify-center border-4">
-                <div className="text-area">
+            <div className="flex flex-row justify-center">
+                <div className="text-area test-area overflow-y-auto hover:shadow-md">
 
                     {/* {selectedParagraph} */}
                     {
@@ -35,7 +35,7 @@ function TypingChallenge({
                 </div>
                 <textarea
                     onChange={(e) => inputHandler(e.target.value)}
-                    className="text-area resize-none"
+                    className="text-area resize-none hover:shadow-md"
                     placeholder="Start typing here"
                 />
 

@@ -14,7 +14,7 @@ function TypingChallengeContainer({
 }) {
     return (
         <div className="flex flex-col flex-grow">
-            <div className="flex flex-row justify-evenly">
+            <div className="flex flex-row justify-evenly h-auto">
                 <div className="w-1/3"><ChallengeDetailCard cardName="WORDS" cardValue={words} /></div>
                 <div className="w-1/3"><ChallengeDetailCard cardName="CHARACTERS" cardValue={characters} /></div>
                 <div className="w-1/3"><ChallengeDetailCard cardName="WPM" cardValue={wpm} /></div>
