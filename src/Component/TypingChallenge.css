@@ -1,11 +1,11 @@
 .text-area {
+    font-family: Arial, Helvetica, sans-serif;
     width: 45%;
     height: 465px;
     margin: 20px 0px;
     text-align: left;
     padding: 15px 20px;
     text-align: justify;
-    font-size: 1.1rem;
     border: 1px solid rgba(97, 97, 97, 0.247);
 }
 
@@ -17,6 +17,5 @@
 @media (max-width: 640px) {
     .text-area {
         width: 50%;
-        font-size: 0.9rem;
     }
 }

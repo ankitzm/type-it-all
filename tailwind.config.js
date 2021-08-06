@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     fontFamily: {
       'bangers': ['bangers', 'system-ui'],
-      'pacifico': ['Pacifico', 'cursive']
     },
     extend: {
       width: {

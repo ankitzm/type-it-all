@@ -19,8 +19,8 @@ function TypingChallenge({
                 <div className="text-4xl">00:{timeRemaining >= 10 ? timeRemaining : `0${timeRemaining}`}</div>
                 <div className="text-2xl mt-2 delay-500">{!timerStarted && "Start typing to start the test"}</div>
             </div>
-            <div className="flex flex-row justify-center">
-                <div className="text-area test-area overflow-y-auto hover:shadow-md">
+            <div className="flex flex-row justify-center text-sm md:text-2xl leading-5">
+                <div className="text-area test-area overflow-y-auto hover:shadow-">
 
                     {/* {selectedParagraph} */}
                     {
