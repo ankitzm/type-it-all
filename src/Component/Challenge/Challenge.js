@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Challenge.css"
-import TestContainer from './TestContainer'
+import TestContainer from '../TestContainer'
 
 function Challenge({
     selectedParagraph,

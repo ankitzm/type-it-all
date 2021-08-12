@@ -1,5 +1,5 @@
 import React from 'react'
-import TestLetter from './TestLetter'
+import TestLetter from './../TestLetter'
 import "./TypingChallenge.css"
 
 function TypingChallenge({
