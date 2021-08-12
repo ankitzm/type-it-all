@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Challenge from './Component/Challenge';
+import Challenge from './Component/Challenge/Challenge';
 import Footer from './Component/Footer';
 import Landing from './Component/Landing';
 import Nav from "./Component/Nav"
 
-import { SAMPLE_PARAGRAPHS } from './data/sampleParagraph';
+import { SAMPLE_PARAGRAPHS } from './SampleParagraphs/sampleParagraph';
 
 const totalTime = 60;
 // const apiURL = "http://metaphorpsum.com/paragraphs/1/8"   // defining api url

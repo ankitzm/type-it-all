@@ -1,6 +1,6 @@
 import React from 'react'
 import ChallengeDetailCard from './ChallengeDetailCard'
-import TypingChallenge from './TypingChallenge';
+import TypingChallenge from './TypingChallenge/TypingChallenge';
 
 function TypingChallengeContainer({
     selectedParagraph,
