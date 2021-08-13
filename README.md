@@ -10,5 +10,5 @@
 6. Test automatically completes after a minute and results are shown.
 7. The user can retry or share their result on twitter/facebook.
 
-Thanks for nrewading that all !
+Thanks for reading that all ! <br>
 Happy coding :blush:
