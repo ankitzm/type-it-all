@@ -10,5 +10,14 @@
 6. Test automatically completes after a minute and results are shown.
 7. The user can retry or share their result on twitter/facebook.
 
+## Library Used
+
+- https://www.npmjs.com/package/typewriter-effect
+- https://michalsnik.github.io/aos/
+
+## Credits
+
+- Flash(hero) image is taken from here - https://www.pngmart.com/image/tag/flash
+
 Thanks for reading that all ! <br>
 Happy coding :blush:
