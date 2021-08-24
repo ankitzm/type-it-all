@@ -1,6 +1,6 @@
-import React from 'react'
-import "./Challenge.css"
-import TestContainer from '../TestContainer'
+import React from 'react';
+import "./Challenge.css";
+import TestContainer from '../TestContainer';
 
 function Challenge({
     selectedParagraph,
@@ -35,4 +35,4 @@ function Challenge({
     )
 }
 
-export default Challenge
+export default Challenge;
