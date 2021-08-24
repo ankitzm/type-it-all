@@ -1,5 +1,5 @@
-import React from 'react'
-import "./ForkMe.css"
+import React from 'react';
+import "./ForkMe.css";
 
 function ForkMe({ url }) {
     return (
@@ -20,4 +20,4 @@ function ForkMe({ url }) {
     )
 }
 
-export default ForkMe
+export default ForkMe;

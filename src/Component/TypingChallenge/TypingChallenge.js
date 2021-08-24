@@ -1,6 +1,6 @@
-import React from 'react'
-import TestLetter from './../TestLetter'
-import "./TypingChallenge.css"
+import React from 'react';
+import TestLetter from './../TestLetter';
+import "./TypingChallenge.css";
 
 function TypingChallenge({
     selectedParagraph,
@@ -44,4 +44,4 @@ function TypingChallenge({
     )
 }
 
-export default TypingChallenge
+export default TypingChallenge;
