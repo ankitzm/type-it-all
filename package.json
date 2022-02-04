@@ -2,7 +2,7 @@
   "name": "type-it-all",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ankitzm.co/type-it-all/",
+  "homepage": "https://ankitsingh.me/project/type-it-all/",
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@testing-library/jest-dom": "^5.14.1",
